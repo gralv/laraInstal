@@ -3,11 +3,13 @@
 - доступ к команде composer из терминала phpstorm
 - положить phpstorm как закладку в панель openserver "Мои закладки". Настройки -> Закладки "путь к phpstorm64.exe"
 ## Laravel install в текущую папку без создания подпапки
-- composer create-project laravel/laravel . 
+```
+composer create-project laravel/laravel . 
+```
 - работает если папка пуста 
-- не стработает если предварительно открыть папку в phpstorm тот добавляет свою папку проекта
+- не работает если предварительно открыть папку в phpstorm тот добавляет свою папку проекта
 ## Запуск laravel на openserver->nginx
-- скопировать файл \userdata\config\Nginx_1.21_vhost.conf в \public\Nginx_1.21_vhost.conf
+- скопировать файл \userdata\config\Nginx_1.21_vhost.conf -> projectLaravel\public\Nginx_1.21_vhost.conf
 - раскоментировать строку rewrite ^/(.*)$ /index.php?/$1 last;
 - возможно добавить попку домена в Настройки -> Домены
 ## Install git openserver
