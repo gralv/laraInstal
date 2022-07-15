@@ -33,6 +33,27 @@ export default defineConfig({
 ```
 php artisan vendor:publish --tag=vite-config
 ```
+### example app.js
+```
+import './bootstrap';
+import '../css/app.css';
+import {createApp, defineAsyncComponent} from 'vue/dist/vue.esm-bundler.js';
+
+
+const RootComponent1 = createApp({
+    data() {
+        return {
+            message: 'Hello root Component 1',
+        };
+    },
+    components: {
+        ExampleComponent: defineAsyncComponent(() =>
+            import('/resources/js/components/ExampleComponent.vue')
+        )
+    },
+},);
+RootComponent1.mount('#root-component-1');
+```
 
 ## Запуск laravel на openserver->nginx
 - скопировать файл \userdata\config\Nginx_1.21_vhost.conf -> projectLaravel\public\Nginx_1.21_vhost.conf
