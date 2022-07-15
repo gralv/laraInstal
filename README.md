@@ -6,6 +6,8 @@
 ```
 composer create-project laravel/laravel . 
 ```
+- работает если папка пуста 
+- не работает если предварительно открыть папку в phpstorm тот добавляет свою папку проекта
 ## Install Vue 3 and Vite config
 ```
 npm install //установит текушие пакеты из package
@@ -31,8 +33,7 @@ export default defineConfig({
 ```
 php artisan vendor:publish --tag=vite-config
 ```
-- работает если папка пуста 
-- не работает если предварительно открыть папку в phpstorm тот добавляет свою папку проекта
+
 ## Запуск laravel на openserver->nginx
 - скопировать файл \userdata\config\Nginx_1.21_vhost.conf -> projectLaravel\public\Nginx_1.21_vhost.conf
 - раскоментировать строку rewrite ^/(.*)$ /index.php?/$1 last;
