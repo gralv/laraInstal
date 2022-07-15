@@ -6,6 +6,31 @@
 ```
 composer create-project laravel/laravel . 
 ```
+## Install Vue 3 and Vite config
+```
+npm install //установит текушие пакеты из package
+npm install vue@next vue-loader@next
+npm i @vitejs/plugin-vue@2.3.3
+composer require innocenzi/laravel-vite:0.2.*
+npm i -D vite vite-plugin-laravel
+```
+### Изменить vite.config.js
+```
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
+import laravel from 'vite-plugin-laravel'
+
+export default defineConfig({
+	plugins: [
+		vue(),
+		laravel()
+	]
+})
+```
+### add config/vite.php
+```
+php artisan vendor:publish --tag=vite-config
+```
 - работает если папка пуста 
 - не работает если предварительно открыть папку в phpstorm тот добавляет свою папку проекта
 ## Запуск laravel на openserver->nginx
