@@ -87,3 +87,4 @@ resolve: {
         },
     },
 ```
+- частично информация бралась https://creagia.com/blog/using-laravel-vite-with-bootstrap-and-sass
