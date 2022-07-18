@@ -69,6 +69,7 @@ RootComponent1.mount('#root-component-1');
 ## Install bootstrap
 ```
 npm install bootstrap
+npm install sass
 ```
 - создать файл **resources/sсss/app.scss** с содержимым https://github.com/twbs/bootstrap-npm-starter/blob/main/scss/starter.scss
 - там же файл иконок **_icon-list.scss** https://github.com/twbs/bootstrap-npm-starter/blob/main/scss/_icon-list.scss
@@ -88,3 +89,4 @@ resolve: {
     },
 ```
 - частично информация бралась https://creagia.com/blog/using-laravel-vite-with-bootstrap-and-sass
+- Полный гайд по SCSS/SASS https://medium.com/nuances-of-programming/полный-гайд-по-scss-sass-b09ae0c87afe
