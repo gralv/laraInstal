@@ -66,3 +66,24 @@ RootComponent1.mount('#root-component-1');
 - - добавить
 - - modules\php\PHP_8.0
 - - modules\git\bin\
+## Install bootstrap
+```
+npm install bootstrap
+```
+- создать файл resources/sсss/app.scss с содержимым https://github.com/twbs/bootstrap-npm-starter/blob/main/scss/starter.scss
+- там же файл иконок _icon-list.scss https://github.com/twbs/bootstrap-npm-starter/blob/main/scss/_icon-list.scss
+- в файл resources/js/bootstrap.js добавить
+```
+import "../scss/app.scss"
+import * as bootstrap from 'bootstrap'
+```
+- возможно в файл vite.config.js добавить
+```
+resolve: {
+        alias: {
+            // '@': '/resources/js',
+            // 'vue': '../node_modules/vue/dist/vue.esm-bundler.js',
+               '~bootstrap': path.resolve(__dirname, 'node_modules/bootstrap'),
+        },
+    },
+```
