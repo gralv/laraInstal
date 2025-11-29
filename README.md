@@ -8,6 +8,26 @@ composer create-project laravel/laravel .
 ```
 - работает если папка пуста 
 - не работает если предварительно открыть папку в phpstorm тот добавляет свою папку проекта
+
+## Консоль openServer для VSCode
+- создать файл d:\OS646\home\vue7.lara\www\.vscode\settings.json - изменить на свой путь к проекту
+- добавить
+```
+{
+    "terminal.integrated.defaultProfile.windows": "OpenServer",
+
+    "terminal.integrated.profiles.windows": {
+        "OpenServer": {
+            "path": "C:\\Windows\\System32\\cmd.exe",
+            "args": [
+                "/k",
+                "D:\\OS646\\bin\\osp.bat reset init noprint & D:\\OS646\\bin\\osp.bat project vue7.lara"
+            ],
+            "cwd": "D:\\OS646\\home\\vue7.lara\\www"
+        }
+    }
+}
+```
 ## Install Vue 3 and Vite config
 ```
 npm install //установит текушие пакеты из package
