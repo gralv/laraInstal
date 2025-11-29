@@ -110,3 +110,9 @@ resolve: {
 ```
 - частично информация бралась https://creagia.com/blog/using-laravel-vite-with-bootstrap-and-sass
 - Полный гайд по SCSS/SASS https://medium.com/nuances-of-programming/полный-гайд-по-scss-sass-b09ae0c87afe
+
+# Установка VUE для laravel 12
+- Для первого пункта — установки Vue 3 и плагина Vite для Vue — вам нужно выполнить следующую команду в терминале, находясь в директории проекта:
+```
+npm install vue@next @vitejs/plugin-vue
+
