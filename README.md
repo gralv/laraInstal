@@ -127,3 +127,11 @@ Failed to login. Message: This account requires setting the GOOGLE_CLOUD_PROJECT
 ```
 - смотрим https://www.youtube.com/watch?v=Mf_p4mnyceg
 - переходим по https://goo.gle/gemini-cli-auth-docs#workspace-gca
+- создать проект в https://console.cloud.google.com/apis/dashboard?pli=1&project=bold-meridian-160318
+- установка прав для проекта
+- в консоли export GOOGLE_CLOUD_PROJECT="YOUR_PROJECT_ID" или
+- создать в проекте папку .gemini и файл .env с записью
+```
+GOOGLE_CLOUD_PROJECT="myproject1-479712"
+```
+
