@@ -115,7 +115,7 @@ resolve: {
 - Для первого пункта — установки Vue 3 и плагина Vite для Vue — вам нужно выполнить следующую команду в терминале, находясь в директории проекта:
 ```
 npm install vue@next @vitejs/plugin-vue
-
+```
 # VSCode установка агентов AI
 https://www.youtube.com/watch?v=4mZLmNPwfYI
 
