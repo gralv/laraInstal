@@ -117,8 +117,8 @@ resolve: {
 npm install vue@next @vitejs/plugin-vue
 ```
 # VSCode установка агентов AI
-https://www.youtube.com/watch?v=4mZLmNPwfYI
-авторизации в поролях по имени VSCode Agent AI
+- https://www.youtube.com/watch?v=4mZLmNPwfYI
+- авторизации в поролях по имени VSCode Agent AI
 
 # VSCode подключение gemini
 - после авторизации при ошибке
