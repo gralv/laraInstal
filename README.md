@@ -116,3 +116,14 @@ resolve: {
 ```
 npm install vue@next @vitejs/plugin-vue
 
+# VSCode установка агентов AI
+https://www.youtube.com/watch?v=4mZLmNPwfYI
+
+# VSCode подключение gemini
+- после авторизации при ошибке
+```
+Failed to login. Message: This account requires setting the GOOGLE_CLOUD_PROJECT or GOOGLE_CLOUD_PROJECT_ID env    │
+│   var. See https://goo.gle/gemini-cli-auth-docs#workspace-gca
+```
+- смотрим https://www.youtube.com/watch?v=Mf_p4mnyceg
+- переходим по https://goo.gle/gemini-cli-auth-docs#workspace-gca
